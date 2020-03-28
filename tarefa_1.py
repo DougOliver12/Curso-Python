@@ -136,27 +136,27 @@ print(somaquad)
 
 # 29 faca media de quatro notas
 
-num7 = int(input("Digite uma nota : "))
-num8 = int(input("Digite uma nota : "))
-num9 = int(input("Digite uma nota : "))
-num10 = int(input("Digite uma nota : "))
+num7 = float(input("Digite uma nota : "))
+num8 = float(input("Digite uma nota : "))
+num9 = float(input("Digite uma nota : "))
+num10 = float(input("Digite uma nota : "))
 medianota = ((num7 + num8 + num9 + num10) / 4)
 print("A media e :", medianota)
 
 # 30 ler valor do real e cotacao do dolar,, imprimir valor em dolares
 
-real = int(input("Digite o valor em reais : "))
+real = int(input("Digite o valor e""m reais : "))
 cotdolar = float(input("Digite a cotacao do dolar : "))
 conversaoreal = real / cotdolar
-print(conversaoreal)
+print("O valor em dolares e: ", conversaoreal)
 
 # 31 leia um numero inteiro e imprima o seu antecessor e o seu sucessor
 
 num = int(input("Digite um numero : "))
 antecessor = num - 1
 sucessor = num + 1
-print("Antecessor", antecessor)
-print("Sucessor", sucessor)
+print("Antecessor: ", antecessor)
+print("Sucessor: ", sucessor)
 
 # 32 leia um numero inteiro e apresente a soma do sucessor de seu triplo com o antecessor de seu dobro
 
@@ -168,13 +168,89 @@ print(somatrisuc)
 
 ladoquad = int(input("Digite o valor do lado : "))
 areaquad = ladoquad * ladoquad
-print(areaquad)
+print("A area do Quadrado e: ", areaquad)
 
 # 34 leia o valor de raio de um circulo e imprima o valor dda area do circulo
 
 raiocirc = int(input("Digite o valor do raio : "))
 areacirc = (pi * (raiocirc ** 2))
-print(areacirc)
+print("A area do Circulo e: ", areacirc)
+
+# 35 sejam a e b catetos e um triangulo, calcule a hipotenusa
+
+cat1 = float(input("Digite o valor do cateto 1 : "))
+cat2 = float(input("Digite o valor do cateto 2 : "))
+hipotenusa = pow((cat1 ** 2) + (cat2 ** 2))
+print("A Hipotenusa e: ", hipotenusa)
+
+# 36 leia a altura e o raio de um cilindro circular e imprima o volume
+
+aut1 = float(input("Digite o valor da altura do cilindro : "))
+raio2 = float(input("Digite o valor do raio do cilindro : "))
+volcilindro = (pi * ((raio2 ** 2) * aut1))
+print("O volume e: ", volcilindro)
+
+# 37 faca um programa que leia um valor de um produto e imprima com 12 % de desconto
+
+valorproduto = float(input("Digite o valor do produto : "))
+novovalorproduto = valorproduto * 0.88
+print("O valor com desconto e: ", novovalorproduto)
+
+# 38 leia o salario e imprima o mesmo com 25% de aumento
+
+valorsalario = float(input("Digite o valor do salario : "))
+novossal = valorsalario * 0.25
+print("Seu salario novo e: ", novossal + valorsalario)
+
+# 39 780.000.00 divididos para 3 jogadores, o primeiro 46%, o segundo 32% e o terceiro o restante, imprima os valores
+primcoloq = 780000.00 * 0.46
+print("O primeiro colocado ganhou: ", primcoloq)
+seccoloq = 780000.00 * 0.32
+print("O segundo colocado ganhou: ", seccoloq)
+terccoloq = 780000.00 - primcoloq-seccoloq
+print("O terceiro colocado ganhou: ", terccoloq)
+print("Total: ", primcoloq+seccoloq+terccoloq)
+
+# 40 um encanador ganha R$ 30.00 por dia aplique 8% de imposto de renda sobre os dias trabalhados e imprima o resultado
+
+dias = float(input("Digite a quantidade de dias trabalhados: "))
+salariototal = dias * 30.00
+impostorenda = salariototal *0.92
+print(salariototal - impostorenda,"a menos no salario.")
+
+# 41 faca um programa que leia o valor da hora trabalhada e o numero de horas no mes, imprima o valor total com 10% de bonus
+
+valhoras = float(input("Digite o valor da hora trabalhada: "))
+horas = float(input("Digite a quantidade de horas trabalhados: "))
+valtotalhoras = horas * valhoras
+print("Total de horas: ", valtotalhoras)
+valbonus = valtotalhoras * 0.1
+print("Valor do bonus: R$ ", valbonus)
+
+# 42 receba o salario base de um funcionario. Calcule e imprima o salario a receber  com 5% de gratificacao e 7% de imposto
+
+salario = float(input("Digite o salario: "))
+grat = salario * 0.05
+salbruto = salario + grat
+print("O valor com gratificacao: R$ ", salbruto)
+desc = salbruto * 0.93
+print("O valor do desconto e: R$ ", salbruto - desc)
+
+# 43 a partir de um valo lido: total a pagar com 10%, o valor de cada parcela 3x sem juros, comissao de 5% do vendedor
+# sobre o valor com desconto se for a vista e 5% do vendedor sobre valor total no caso de ser parcelada
+
+valcompra =float(input("Digite o valor do produto em R$: "))
+string1 = input("a vista? ")
+if string1 == "S" or string1 == "Sim":
+    {
+          print("A vista tem 10% de desconto, o valor sera de R$: ", valcompra * 0.9)
+
+    }
+elif string1 == "N" or string1 == "Nao":
+    {
+        print("A prazo somente por 3 x sem juros cada parcela de de R$: ", valcompra / 3)
+
+    }
 
 
 
