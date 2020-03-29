@@ -1,16 +1,17 @@
 """
 
-Exercicios curso python parte 1 por Douglas Magalhães
+Exercicios Curso Python Udemy parte 1 por Douglas Magalhães
 
 """
-import math
 
 # 1 faca um programa que leia um numero inteiro e o imprima
+
 numero = 44
 print(type(numero))
 print(numero)
 
 # 2 faca um programa que leia um numero real e o imprima
+
 numero = 44.3
 print(type(numero))
 type(numero)
@@ -53,6 +54,7 @@ conversao4 = conversao3 + 273.15
 print(conversao4)
 
 # 10 E 11 leia uma velocidade em km/h e converta para m/s E VICE E VERSA
+
 km = int(input("Digite a distancia em km/h : "))
 conversao5 = km / 3.6
 print(conversao5)
@@ -92,7 +94,7 @@ print(conversao13)
 conversao14 = conversao13 / 1000
 print(conversao14)
 
-# 20 E 21 leia um valor de massa em quilograma e converta em libras E VICE E VERSA
+# 20 E 21 leia um valor de massa em quilogramas e converta em libras E VICE E VERSA
 
 qgrama = int(input("Digite a massa em quilogramas : "))
 conversao15 = qgrama / 0.45
@@ -109,7 +111,6 @@ conversao18 = conversao17 / 0.91
 print(conversao18)
 
 # 24 E 25 leia um valor de area em metros quadrados e converta em acres E VICE E VERSA
-
 
 mquad = int(input("Digite a area em metros quadrados : "))
 conversao19 = mquad * 0.000247
@@ -177,10 +178,12 @@ print("A area do Circulo e: ", areacirc)
 
 # 35 sejam a e b catetos e um triangulo, calcule a hipotenusa
 
-cat1 = float(input("Digite o valor do cateto 1 : "))
-cat2 = float(input("Digite o valor do cateto 2 : "))
-hipotenusa = pow((cat1 ** 2) + (cat2 ** 2))
-print("A Hipotenusa e: ", hipotenusa)
+import math
+cat1 = int(input("Digite o valor do cateto 1 : "))
+cat2 = int(input("Digite o valor do cateto 2 : "))
+hip1 = cat1 ** 2 + cat2 ** 2
+hip2 = math.sqrt(hip1)
+print("A Hipotenusa e: ", hip2)
 
 # 36 leia a altura e o raio de um cilindro circular e imprima o volume
 
@@ -202,6 +205,7 @@ novossal = valorsalario * 0.25
 print("Seu salario novo e: ", novossal + valorsalario)
 
 # 39 780.000.00 divididos para 3 jogadores, o primeiro 46%, o segundo 32% e o terceiro o restante, imprima os valores
+
 primcoloq = 780000.00 * 0.46
 print("O primeiro colocado ganhou: ", primcoloq)
 seccoloq = 780000.00 * 0.32
@@ -241,15 +245,9 @@ print("O valor do desconto e: R$ ", salbruto - desc)
 valcompra =float(input("Digite o valor do produto em R$: "))
 string1 = input("a vista? ")
 if string1 == "S" or string1 == "Sim":
-    {
-          print("A vista tem 10% de desconto, o valor sera de R$: ", valcompra * 0.9)
-
-    }
+        print("A vista tem 10% de desconto, o valor sera de R$: ", valcompra * 0.9)
 elif string1 == "N" or string1 == "Nao":
-    {
         print("A prazo somente por 3 x sem juros cada parcela de de R$: ", valcompra / 3)
-
-    }
 
 # 44 receba a altura do degrau de uma escada e altura que o usuario deseja subir utilizando a escada,imprima a quantidade de degraus
 # ele devera subir para chegar ate o topo
@@ -261,7 +259,7 @@ print("É necessario de", degraus," degrais!!!")
 
 # 45 faça um programa para converter uma letra maiuscula em letra minuscula, use a tabela ascii
 stringletra = input("Digite a letra em maiusculo: ")
- print(stringletra.lower())
+print(stringletra.lower())
 
 # 46 E 47 faca um programa que leia um numero inteiro positivo de tres digitos e gere um outro numero invertido imprima
 # um digito por linha
@@ -298,6 +296,46 @@ for i in range(0, 10):
 
 print ("\nFim")
 
+# 50 implemente um programa que calcule o ano do nascimento atraves da idade e ano atual
+
+idatual = int(input("Digite a idade atual: "))
+anoatual = int(input("Digite o ano atual: "))
+anonasc = anoatual - idatual
+print("Voce nasceu em", anonasc)
+
+# 51 escreva um programa que leia as coordenadas X e Y, de  pontos no R ao quadrado e calcule sua distancia da origem
+
+import math
+
+px = int(input("Digite o ponto x: "))
+py = int(input("Digite o ponto y: "))
+
+d = math.sqrt(px ** 2 + py ** 2)
+print("A distancia e:",d)
+
+# 52 tres amigos jogaram na loteria, caso eles ganhem, o premio sera distribuido proporcionamente ao valor da aposta
+# leia qual o valor da aposta, e imprima o valor do premio para cada apostador
+
+ap1 = int(input("Apostador 1, qual é o valor da sua aposta?: "))
+ap2 = int(input("Apostador 2, qual e o valor da sua aposta?: "))
+ap3 = int(input("Apostador 3, qual e o valor da sua aposta?: "))
+aptotal = ap1 + ap2 + ap3
+p1 = ap1 * 100 / aptotal
+p2 = ap2 * 100 / aptotal
+p3 = ap3 * 100 / aptotal
+print(p1)
+print(p2)
+print(p3)
+
+# 53 faca um programa para ler as dimensoes de um terreno, comprimento e largura bem ccomo o preco o metro, imprima o
+# custo para cercar o terreno
+
+comprimento = float(input("Comprimento o terreno: "))
+largura = float(input("Largura o terreno: "))
+valorcerca = float(input("Valor da cerca: "))
+
+valorfinal = (comprimento * largura) * valorcerca
+print("O valor total a cerca e de:", valorfinal)
 
 
 
