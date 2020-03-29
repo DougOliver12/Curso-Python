@@ -3,7 +3,6 @@
 Exercicios curso python parte 1 por Douglas Magalhães
 
 """
-
 import math
 
 # 1 faca um programa que leia um numero inteiro e o imprima
@@ -251,6 +250,54 @@ elif string1 == "N" or string1 == "Nao":
         print("A prazo somente por 3 x sem juros cada parcela de de R$: ", valcompra / 3)
 
     }
+
+# 44 receba a altura do degrau de uma escada e altura que o usuario deseja subir utilizando a escada,imprima a quantidade de degraus
+# ele devera subir para chegar ate o topo
+
+alturaegral = float(input("Digite a altura do degral: "))
+alturasubir = float(input("Digite a altura que deseja chegar: "))
+degraus =alturasubir / alturaegral
+print("É necessario de", degraus," degrais!!!")
+
+# 45 faça um programa para converter uma letra maiuscula em letra minuscula, use a tabela ascii
+stringletra = input("Digite a letra em maiusculo: ")
+ print(stringletra.lower())
+
+# 46 E 47 faca um programa que leia um numero inteiro positivo de tres digitos e gere um outro numero invertido imprima
+# um digito por linha
+
+seq = []
+while True:
+    n = int(input("Digite n: "))
+    if n == 0: break
+    seq.append(n)
+for i in reversed(seq):
+    print(i)
+
+# 48 leia um valor em segundos e imprima em minutos e horas e segundos
+
+segundos = int(input("Por favor, entre com o número de segundos que deseja converter: "))
+
+dias = segundos // 86400
+segundos_rest = segundos % 86400
+horas = segundos_rest // 3600
+segundos_rest = segundos_rest % 3600
+minutos = segundos_rest // 60
+segundos_rest = segundos_rest % 60
+
+print(dias,"dias,",horas,"horas,",minutos,"minutos e",segundos_rest,"segundos.")
+
+# 49 cronometro
+
+import time, sys
+
+for i in range(0, 10):
+    sys.stdout.write("\r{}".format(i))
+    sys.stdout.flush()
+    time.sleep(1)
+
+print ("\nFim")
+
 
 
 
