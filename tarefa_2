@@ -26,6 +26,7 @@ if c % 2 == 0:
 else:
     print("O numero e invalido!!!")
 
+
 # 3 Leia um número real, se o número for positivo imprima a raiz quadrada do número, se for negativo, faça o número ao quadrado.
 
 import math
