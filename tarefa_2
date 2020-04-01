@@ -1,0 +1,168 @@
+"""
+
+Exercicios Curso Python Udemy parte 2 por Douglas Magalhães
+
+"""
+
+# 1 Faça um programa que receba dois números inteiros e mostre qual deles é maior.
+
+a = int(input("Digite o primeiro numero: "))
+b = int(input("Digite o segundo numero: "))
+if a < b:
+    print("O segundo e maior que o primeiro!!!")
+else:
+    print("O primeiro e maior que o segundo!!!")
+
+# 2 Leia um número fornecio pelo usuário, se esse número for positivo, calcule a raiz quadrada do número, se for negativo,
+# mostre uma mensagem dizendo que o número é inválido.
+
+import math
+
+c = int(input("Digite o numero: "))
+if c % 2 == 0:
+    print("O numero e par!!!")
+    raiz = math.sqrt(c)
+    print("A raiz quadrada e:", raiz)
+else:
+    print("O numero e invalido!!!")
+
+# 3 Leia um número real, se o número for positivo imprima a raiz quadrada do número, se for negativo, faça o número ao quadrado.
+
+import math
+
+e = int(input("Digite o numero: "))
+if e % 2 == 0:
+    print("O numero e par!!!")
+    raiz = math.sqrt(c)
+    print("A raiz quadrada e:", raiz)
+else:
+    numqua = math.pow(e, 2)
+    print("O numero ao quadrado e:", numqua)
+
+# 4 Faça um programa que leia um número, se o número for positivo calcule e mostre: O numero ao quadrado e sua raiz.
+
+import math
+
+f = int(input("Digite o numero: "))
+if f % 2 == 0:
+    print("O numero e par!!!")
+    raiz2 = math.sqrt(f)
+    print("A raiz quadrada e:", raiz2)
+    numqua2 = math.pow(f, 2)
+    print("O numero ao quadrado e:", numqua2)
+
+else:
+    print("Número inválido!!!")
+
+# 5 Faça um programa que leia um número, e verifique se é par ou ímpar.
+
+f = int(input("Digite o numero: "))
+if f % 2 == 0:
+    print("O número e par!!!")
+else:
+    print("O número é impar!!!")
+
+# 6 Escreva um programa que dados 2 números inteiros, mostre o maior e a diferença entre eles.
+
+g = int(input("Digite o primeiro número: "))
+h = int(input("Digite o segundo número: "))
+if g > h:
+    print("O primeiro número e maior!!!")
+    dif = g - h
+    print("A diferenca foi de:", dif)
+else:
+    print("O segundo número e maior!!!")
+    dif = h - g
+    print("A diferenca foi de:", dif)
+
+# 7 Escreva um programa que dados 2 números inteiros e mostre o maior mostre tambem no caso de serem iguais
+
+i = int(input("Digite o primeiro número: "))
+j = int(input("Digite o segundo número: "))
+if i > j:
+    print("O primeiro número e maior!!!")
+    dif = i - j
+    print("A diferenca foi de:", dif)
+elif i == j:
+    print("Iguais!!!")
+    dif = i - j
+    print("A diferenca foi de:", dif)
+else:
+    print("O segundo número e maior!!!")
+    dif = j - i
+    print("A diferenca foi de:", dif)
+
+# 8 Escreva um programa que leia 2 notas, verifique se são válidos e exiba a média.
+
+nota1 = int(input("Digite a primeira nota: "))
+nota2 = int(input("Digite a segunda nota: "))
+media = (nota1 + nota2) / 2
+if (nota1 > 0 and nota2 > 0) and (nota1 < 10 and nota2 < 10):
+    print("O numero e valido e o valor da media e", media)
+else:
+    print("Número inválido!!!")
+
+# 9 Leia um salário de um trabalhador e o valor da prestação de um empréstimo, se a prestação for maior que 20% do salário,
+# imprima empréstimo não concedido caso contrário empréstimo concedido.
+
+salario = int(input("Digite o valor do salario: "))
+val_prestacao = int(input("Digite o valor da prestacao: "))
+calc = salario * 0.2
+if val_prestacao > calc:
+    print("Empréstimo não concedido!!!")
+else:
+    print("Empréstimo concedido!!!")
+
+# 10 Faça um programa que leia a altura e o sexo da pessoa e calcule seu peso ideal.
+
+altura = float(input("Digite a altura: "))
+sexo = input("Digite o sexo (no formato M ou F): ")
+if sexo == 'M':
+    print("Homem!!!")
+    p_ideal = (72.7 * altura) - 58
+    p_ideal1 = round(p_ideal, 2)
+    print("Seu peso ideal e", p_ideal1, "Kgs")
+elif sexo == 'F':
+    print("Mulher!!!")
+    p_ideal = (62.1 * altura) - 44.7
+    p_ideal1 = round(p_ideal, 2)
+    print(f"Seu peso ideal e", p_ideal1, "Kgs")
+else:
+    print("Sexo invalido!!!")
+
+# 11 Escreva um programa que leia um número inteiro maior o que zero e evolva, na tela, a soma de todos os seus algarismos.
+
+soma = 0
+numero = int(input("digite o numero: "))
+while(numero > 0):
+    soma += numero % 10
+    numero = int(numero /10)
+print("A soma dos algorismos deu", soma)
+
+# 12 Leia um número real, se o número for negativo imprima número inválido, caso contrário imprima o logaritmo.
+import math
+num2 = int(input("Digite um numero: "))
+if num2 < 0:
+    print("Numero invalido!!!")
+else:
+    log = math.log(num2)
+    log2 = round(log, 2)
+    print("O logaritimo e", log2)
+    
+# 13 Faça um algoritimo que calcule a média ponderada das notas de 3 provas, a primeira e a segunda tem peso 1, e a terceira
+# tem peso 2, ao final mostrar a média e se o aluno foi aprovado
+
+peso1 = 1
+peso2 = 2
+nota1 = float(input("Nota 1:"))
+nota2 = float(input("Nota 2:"))
+nota3 = float(input("Nota 3:"))
+media1 = (nota1 * peso1 + nota2 * peso1 + nota3 * peso2) / (peso1 + peso1 + peso2)
+if media1 >= 60:
+    print("Aprovado, sua nota foi: ", media1)
+else:
+    print("Reprovado, sua nota foi: ", media1)
+
+
+
+
