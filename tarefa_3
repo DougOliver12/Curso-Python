@@ -50,5 +50,42 @@ while True:
    if(i2 == 100000):
        break
 
+# 5 Faça um programa que peça ao usuário 10 valores e depois some-os.
+
+i = 0
+somatoria = 0
+while i < 10:
+   val = int(input("Digite um valor:\n"))
+   somatoria = somatoria + val
+   i = i + 1
+else:
+   print("A somatria e: ", somatoria)
+
+# 6 Faça um programa que peça ao usuário 10 inteiros e depois mostre a média deles.
+
+i = 0
+while i < 10:
+   val = int(input("Digite um valor:\n"))
+   somatoria = somatoria + val
+   media = somatoria / 10
+   i = i + 1
+else:
+   print("A media e: ", media)
+
+# 7 Faça um programa que peça ao usuário 10 inteiros, ignorando não positivos e imprima sua media.
+
+somatoria = 0
+i = 0
+while i < 10:
+   val = int(input("Digite um valor:\n"))
+   if val > 0:
+       somatoria = somatoria + val
+       media = somatoria / 10
+       i = i + 1
+   else:
+       print("Digite um valor positivo!!!")
+else:
+   print("A media e: ", media)
+
 
 
