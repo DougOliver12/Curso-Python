@@ -45,10 +45,10 @@ while i > 0:
 
 i2 = 0
 while True:
-   i2 = i2 + 1000
-   print(i2)
-   if(i2 == 100000):
-       break
+    i2 = i2 + 1000
+    print(i2)
+    if(i2 == 100000):
+        break
 
 # 5 Faça um programa que peça ao usuário 10 valores e depois some-os.
 
