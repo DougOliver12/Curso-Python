@@ -9,9 +9,9 @@ Exercicios Curso Python Udemy parte 3 por Douglas Magalhães
 x = 3
 cont = 1
 while cont <= 5:
-     print(x)
-     x = x + 3
-     cont += 1
+    print(x)
+    x = x + 3
+    cont += 1
 
 # 2 Escreva um programa que escreva na tela de 1 até 100, de 1 em 1, 3 vezes. A primeira vez deve
 # usar for e a segunda while e a terceira do while.
@@ -20,36 +20,36 @@ i = 0
 n = 0
 i2 = 1
 for n in range(100):
-     print(n - 1)
-         while i < 100:
-             print(i)
-             i = i + 1
-             while True:
-                 print(i2)
-                 i2 = i2 + 1
-                 if(i2 > 100):
-                     break
+    print(n - 1)
+        while i < 100:
+            print(i)
+            i = i + 1
+            while True:
+                print(i2)
+                i2 = i2 + 1
+                if(i2 > 100):
+                    break
 
 # 3 Faça um algoritimo utilizando o comando while que mostra uma contagem regressiva na tela,
 # iniciando em 10 e terminando em 0, depois imprimir FIM no final da contagem.
 
 i = 10
 while i > 0:
-    print(i)
-    i = i - 1
-        if i == 0:
-            print("FIM")
+ print(i)
+ i = i - 1
+ if i == 0:
+  print("FIM")
 
 # 4 Escreva um programa que declare um inteiro, inicialize-o com 0 e incremente-o de 1000 em 1000,
 # imprimindo seu valor na tela, ate que seu valor seja 100000 (cem mil).
 
 i2 = 0
 while True:
-    i2 = i2 + 1000
-    print(i2)
-    if(i2 == 100000):
-        break
-
+   i2 = i2 + 1000
+   print(i2)
+   if(i2 == 100000):
+       break
+       
 # 5 Faça um programa que peça ao usuário 10 valores e depois some-os.
 
 i = 0
@@ -87,5 +87,47 @@ while i < 10:
 else:
    print("A media e: ", media)
 
+# 8 Escreva um programa que leia 10 numeros e escreva o menor valor lido e o maior valor lido.
 
+lista = []
+i = 0
+quant = 10
+while i < quant:
+   val = int(input("Digite um valor:\n"))
+   i = i + 1
+   lista.append(val)
+else:
+   print("Menor valor:", (min(lista)))
+   print("Maior valor:", (max(lista)))
 
+# 9 Faça um programa que leia N numeros e imprima os N primeiros numeros naturais impares.
+
+n = int(input("Digite um valor N:\n"))
+i = 0
+while i < n:
+    print(2 * i + 1)
+    i = i + 1
+
+# 10 Faça um programa que calcule e mostre a soma dos primeiros 50 numeros pares.
+
+n = 50
+i = 0
+soma = 0
+while i <= n:
+    soma = soma + 2 * i
+    i = i + 1
+    print(soma)
+
+# 11 Faça um programa que leia numeros inteiros positivos N e imprima todos os números naturais
+# de 0 até N em ordem crescente.
+
+n = int(input("Digite um valor N:\n"))
+i = 0
+print(i)
+while i < n:
+    print(i + 1)
+    i = i + 1
+    
+    
+    
+    
