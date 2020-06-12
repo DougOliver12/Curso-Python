@@ -35,10 +35,10 @@ e = int(input("Digite o numero: "))
 if e % 2 == 0:
     print("O numero e par!!!")
     raiz = math.sqrt(c)
-    print("A raiz quadrada e:", raiz)
+    print("A raiz quadrada e: ", raiz)
 else:
     numqua = math.pow(e, 2)
-    print("O numero ao quadrado e:", numqua)
+    print("O numero ao quadrado e: ", numqua)
 
 # 4 Faça um programa que leia um número, se o número for positivo calcule e mostre: O numero ao quadrado e sua raiz.
 
@@ -83,15 +83,15 @@ j = int(input("Digite o segundo número: "))
 if i > j:
     print("O primeiro número e maior!!!")
     dif = i - j
-    print("A diferenca foi de:", dif)
+    print("A diferenca foi de: ", dif)
 elif i == j:
     print("Iguais!!!")
     dif = i - j
-    print("A diferenca foi de:", dif)
+    print("A diferenca foi de: ", dif)
 else:
     print("O segundo número e maior!!!")
     dif = j - i
-    print("A diferenca foi de:", dif)
+    print("A diferenca foi de: ", dif)
 
 # 8 Escreva um programa que leia 2 notas, verifique se são válidos e exiba a média.
 
@@ -99,7 +99,7 @@ nota1 = int(input("Digite a primeira nota: "))
 nota2 = int(input("Digite a segunda nota: "))
 media = (nota1 + nota2) / 2
 if (nota1 > 0 and nota2 > 0) and (nota1 < 10 and nota2 < 10):
-    print("O numero e valido e o valor da media e", media)
+    print("O numero e valido e o valor da media e: ", media)
 else:
     print("Número inválido!!!")
 
@@ -122,23 +122,23 @@ if sexo == 'M':
     print("Homem!!!")
     p_ideal = (72.7 * altura) - 58
     p_ideal1 = round(p_ideal, 2)
-    print("Seu peso ideal e", p_ideal1, "Kgs")
+    print("Seu peso ideal e: ", p_ideal1, "Kgs")
 elif sexo == 'F':
     print("Mulher!!!")
     p_ideal = (62.1 * altura) - 44.7
     p_ideal1 = round(p_ideal, 2)
-    print(f"Seu peso ideal e", p_ideal1, "Kgs")
+    print(f"Seu peso ideal e: ", p_ideal1, "Kgs")
 else:
     print("Sexo invalido!!!")
 
 # 11 Escreva um programa que leia um número inteiro maior o que zero e evolva, na tela, a soma de todos os seus algarismos.
 
 soma = 0
-numero = int(input("digite o numero: "))
+numero = int(input("Digite o numero: "))
 while(numero > 0):
     soma += numero % 10
-    numero = int(numero /10)
-print("A soma dos algorismos deu", soma)
+    numero = int(numero / 10)
+    print("A soma dos algorismos e de: ", soma)
 
 # 12 Leia um número real, se o número for negativo imprima número inválido, caso contrário imprima o logaritmo.
 import math
@@ -148,22 +148,21 @@ if num2 < 0:
 else:
     log = math.log(num2)
     log2 = round(log, 2)
-    print("O logaritimo e", log2)
+    print("O logaritimo e: ", log2)
     
 # 13 Faça um algoritimo que calcule a média ponderada das notas de 3 provas, a primeira e a segunda tem peso 1, e a terceira
 # tem peso 2, ao final mostrar a média e se o aluno foi aprovado
 
 peso1 = 1
 peso2 = 2
-nota1 = float(input("Nota 1:"))
-nota2 = float(input("Nota 2:"))
-nota3 = float(input("Nota 3:"))
+nota1 = float(input("Nota 1: "))
+nota2 = float(input("Nota 2: "))
+nota3 = float(input("Nota 3: "))
 media1 = (nota1 * peso1 + nota2 * peso1 + nota3 * peso2) / (peso1 + peso1 + peso2)
 if media1 >= 60:
     print("Aprovado, sua nota foi: ", media1)
 else:
     print("Reprovado, sua nota foi: ", media1)
-
 
 
 
