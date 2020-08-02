@@ -34,3 +34,23 @@ def verifica(num):
         print("-1")
 		
 verifica(num)		
+
+# 4 Faça uma função para verificar se um numero é quadrado perfeito.
+
+def quadradoPerfeito(valor):
+
+	aux = 1
+
+	raizQ = int(valor ** (1/2))
+
+	if((raizQ ** 2) == valor ):
+		print('O número {0} é um quadrado perfeito!!!'.format(int(valor)))
+	else:
+		print('O número {0} não é quadrado perfeito!!!'.format(valor))
+
+	print('\n*** Os dez primeiro quadrado perfeito ***')
+	while(aux <= 10):
+		print('{0} ^ {1} = {2}'.format(aux, 2,(aux ** 2)))
+		aux = aux + 1
+		
+quadradoPerfeito(valor)		
