@@ -13,13 +13,19 @@ c- Modifique o vetor na posição 4, atribuindo a esta posição o valor 100.
 d- Mostre na tela cada valor o vetor A, um em cada linha.
 
 A = [1,0,5,-2,-5,7]
-a=A[0]
-print( A[0])
-b=A[1]
-print( A[1])
-c=A[5]
-print( A[5])
+a = A[0]
+print(A[0])
+b = A[1]
+print(A[1])
+c = A[5]
+print(A[5])
 sum = a + b + c
 print("A soma dos vetores e:", sum)
 A[4] = 100
 print("Valor do vetor em A[4]:", A[4])  
+
+# 2 Crie um programa que lê 6 numeros inteiros e, em seguida, mostre na tela os valores lidos.  
+
+meuVetor = [0]*6
+print(meuVetor)
+
