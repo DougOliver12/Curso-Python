@@ -9,6 +9,8 @@ Exercicios Curso Python Udemy parte 5 por Douglas Magalhães
 def dobro(num):
     return num * 2
 	
+dobro(num)
+	
 # 2 Faça uma função que receba a data atual (dia, mes e ano em inteiro) e exibe-a na tela 
 no formato textual por extenso. Exemplo: Data: 01/01/2000. Imprimir: 1 de Janeiro de 2000.
 
@@ -20,3 +22,15 @@ dia, mes, ano = data.split("/")
 mes = int(mes)-1
 print ("A data em extenso e: %s de %s de %s"%(dia, meses[mes], ano))
 
+# 3 Faça uma função para verificar se um numero é positivo ou negativo. Sendo que o valor de retorno
+será 1 se positivo ou -1 negativo e zero se for = 0.
+
+def verifica(num):
+    if num > 0:
+        print("1")
+    elif num == 0:
+        print("0")
+    else:
+        print("-1")
+		
+verifica(num)		
