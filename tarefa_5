@@ -1,0 +1,22 @@
+"""  
+
+Exercicios Curso Python Udemy parte 5 por Douglas Magalhães  
+
+"""  
+
+# 1 Crie uma função que recebe como parâmetro um número inteiro e devolve seu dobro.
+
+def dobro(num):
+    return num * 2
+	
+# 2 Faça uma função que receba a data atual (dia, mes e ano em inteiro) e exibe-a na tela 
+no formato textual por extenso. Exemplo: Data: 01/01/2000. Imprimir: 1 de Janeiro de 2000.
+
+meses = ('janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro')
+unidades = ('zero','um', 'dois','tres','quatro','cinco','seis','sete','oito','nove')
+dezenas = ('dez', 'vinte','trinta','quarenta','cinquenta','sessenta','setenta','oitenta','noventa')
+data = input("Digite a sua data de nascimento utilizando numeros no formato dia/mes/ano: ")
+dia, mes, ano = data.split("/")
+mes = int(mes)-1
+print ("A data em extenso e: %s de %s de %s"%(dia, meses[mes], ano))
+
