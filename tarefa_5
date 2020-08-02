@@ -22,7 +22,7 @@ dia, mes, ano = data.split("/")
 mes = int(mes)-1
 print ("A data em extenso e: %s de %s de %s"%(dia, meses[mes], ano))
 
-# 3 Faça uma função para verificar se um numero é positivo ou negativo. Sendo que o valor de retorno
+# 3 Faça uma função para verificar se um número é positivo ou negativo. Sendo que o valor de retorno
 será 1 se positivo ou -1 negativo e zero se for = 0.
 
 def verifica(num):
@@ -35,7 +35,7 @@ def verifica(num):
 		
 verifica(num)		
 
-# 4 Faça uma função para verificar se um numero é quadrado perfeito.
+# 4 Faça uma função para verificar se um número é quadrado perfeito.
 
 def quadradoPerfeito(valor):
 
@@ -54,3 +54,30 @@ def quadradoPerfeito(valor):
 		aux = aux + 1
 		
 quadradoPerfeito(valor)		
+
+# 5 Faça uma função e um programa de teste para o calculo do volume de uma esfera.
+
+import math
+
+def volumeEsfera(raio):
+    volume = (4 / 3) * math.pi * math.pow(float(raio),3)
+    print("Volume %.2f" % volume)
+
+volumeEsfera(raio)
+
+# 6 Faça uma função que receba 3 números inteiros como parâmetro,h,m,s convertendo para segundos.
+
+def convSegundos(horas_str, minutos_str, segundos_str):
+    seg_horas = horas_str * 3600
+    seg_min = minutos_str * 60
+    if(horas_str > 1):
+        print("Voce ira converter ",horas_str,"horas",minutos_str,"minutos e",segundos_str,"segundos na escala de tempo segundos!!!")
+        total = (seg_horas + seg_min + segundos_str)
+        print("O total é de ", total, "segundos!!!")
+    else:
+        print("Voce ira converter ",horas_str,"hora",minutos_str,"minutos e",segundos_str,"segundos na escala de tempo segundos!!!")
+        total = (seg_horas + seg_min + segundos_str)
+        print("O total é de ", total, "segundos!!!")
+
+convSegundos(horas_str, minutos_str, segundos_str)
+
