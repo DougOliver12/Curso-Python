@@ -118,4 +118,32 @@ def maior(a, b):
         print("B é menor, portanto A e maior!!!")
 
 maior(a, b)
-        
+
+# 11 Elabore uma função que receba 3 notas de um aluno como parâmetros e uma letra,
+# se a letra for A, a função deverá calcular a média aritmética das notas o aluno,
+# se for P, everá calcular a média ponderada, com pesos 5,3 e 2.
+
+def notas(n1, n2, n3):
+    op = input("Digite A para media aritmetica ou P para media ponderada:")
+    if op == "a" or op == "A":
+        mediaA = (n1 + n2 + n3) / 3
+        print("Media Aritmetica: ", mediaA)
+    elif op == "p" or op == "P":
+        mediaP = (n1 * 5) + (n2 * 3) + (n3 * 2) / 3
+        print("Media Ponderada: ", mediaP) 
+    else:
+        print("Erro, caractere invalido!!!")
+
+notas(n1, n2, n3)
+
+# 12 Escreva uma função que receba um número maior que zero e retorne a soma de todos os seus algarismos.
+# Por exemplo, ao número, 251 corresponerá o valor 8 (2 + 5 + 1). Se o número lido não for maior do que 
+# zero, o programa terminará com a mensagem "Número inválido".
+
+def sum_digits3(n):
+   r = 0
+   while n:
+       r, n = r + n % 10, n // 10
+   return r
+
+sum_digits3(n)
