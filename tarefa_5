@@ -14,13 +14,14 @@ dobro(num)
 # 2 Faça uma função que receba a data atual (dia, mes e ano em inteiro) e exibe-a na tela 
 no formato textual por extenso. Exemplo: Data: 01/01/2000. Imprimir: 1 de Janeiro de 2000.
 
-meses = ('janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro')
-unidades = ('zero','um', 'dois','tres','quatro','cinco','seis','sete','oito','nove')
-dezenas = ('dez', 'vinte','trinta','quarenta','cinquenta','sessenta','setenta','oitenta','noventa')
-data = input("Digite a sua data de nascimento utilizando numeros no formato dia/mes/ano: ")
-dia, mes, ano = data.split("/")
-mes = int(mes)-1
-print ("A data em extenso e: %s de %s de %s"%(dia, meses[mes], ano))
+def extenso(dia, mes, ano):
+    meses = ('janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro')
+    unidades = ('zero','um', 'dois','tres','quatro','cinco','seis','sete','oito','nove')
+    dezenas = ('dez', 'vinte','trinta','quarenta','cinquenta','sessenta','setenta','oitenta','noventa')
+    mes = int(mes)-1
+    print("A data em extenso e: %s de %s de %s"%(dia, meses[mes], ano))
+
+extenso(d,m,aaaa)
 
 # 3 Faça uma função para verificar se um número é positivo ou negativo. Sendo que o valor de retorno
 será 1 se positivo ou -1 negativo e zero se for = 0.
@@ -80,4 +81,23 @@ def convSegundos(horas_str, minutos_str, segundos_str):
         print("O total é de ", total, "segundos!!!")
 
 convSegundos(horas_str, minutos_str, segundos_str)
+
+# 7 Crie uma função que recebe como parâmetro uma temperatura em graus celsius e converta para fahrenheit.
+
+def convFahr(celsius):
+    conversao = celsius * (9.0/5.0) + 32.0
+    print(conversao)
+
+convFahr(celsius)
+
+# 8 Sejam a e b catetos de um triângulo, calcule a hipotenusa através e uma função.
+
+import math
+
+def hipotenusa(cat1, cat2):
+    hip1 = cat1 ** 2 + cat2 ** 2
+    hip2 = math.sqrt(hip1)
+    print("A Hipotenusa e: ", hip2)
+
+hipotenusa(cat1, cat2)
 
