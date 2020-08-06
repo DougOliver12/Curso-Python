@@ -140,10 +140,10 @@ notas(n1, n2, n3)
 # Por exemplo, ao número, 251 corresponerá o valor 8 (2 + 5 + 1). Se o número lido não for maior do que 
 # zero, o programa terminará com a mensagem "Número inválido".
 
-def sum_digits3(n):
+def algarismos(num):
    r = 0
-   while n:
-       r, n = r + n % 10, n // 10
+   while num:
+       r, num = r + num % 10, num // 10
    return r
 
-sum_digits3(n)
+algarismos(num)
