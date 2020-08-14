@@ -147,3 +147,25 @@ def algarismos(num):
    return r
 
 algarismos(num)
+
+# 13 Faça uma função que leia 2 números e um símbolo que representa uma operação(calculadora)
+
+def calc(n1, n2, operacao):
+   operacao = input("Digite + para soma, - para subtracao, * para multiplicação e / para divisão")
+   if operacao == "+":
+        res = (n1 + n2) 
+        print("O valor da soma e: ", res)
+   elif operacao == "-":
+        res = (n1 - n2)
+        print("O valor da subtracao e: ", res)
+   elif operacao == "*":
+        res = (n1 * n2) 
+        print("O valor da soma e: ", res)
+   elif operacao == "/":
+	      if n2 == 0:
+            print("Nao existe divisao por zero!!!")
+	      else:
+            res = n1 / n2
+            print("O valor da subtracao e: ", res)
+
+calc(n1 , n2, operacao)
