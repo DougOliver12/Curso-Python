@@ -169,3 +169,20 @@ def calc(n1, n2, operacao):
             print("O valor da subtracao e: ", res)
 
 calc(n1 , n2, operacao)
+
+#19 Escreva uma funçãp que gere o maior fator primo de um numero n.
+
+def maior_primo(n):
+
+    primos = []
+    for i in range(n):
+        c = 0
+        for j in range(n):
+            if i%(j+1) == 0: 
+                c += 1
+        if c == 2:
+            primos.append(i)
+
+    return(max(primos))
+    
+maior_primo(n)
