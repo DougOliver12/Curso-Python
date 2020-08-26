@@ -1,4 +1,4 @@
-# Curso de programacao em Python do basico ao avancado.    
+# Curso de programacao em Python do básico ao avançado.    
 A demanda por programadores Python nunca esteve tão alta, afinal, Python é uma das linguagens mais utilizadas no mundo e requisito para se trabalhar com Ciência de Dados e Inteligência Artificial.
 
 Além disso, a demanda por profissionais Python para trabalhar com a Internet utilizando algum dos frameworks web mais populares como Django, Flask ou Tornado tem crescido muito nos últimos anos.
