@@ -186,3 +186,17 @@ def maior_primo(n):
     return(max(primos))
     
 maior_primo(n)
+
+# 20 Calcule o fatorial de um determinado valor.
+
+def fatorial(valor):
+    fat = 1  
+    while (valor > 1):  
+      fat = fat * valor  
+      valor = valor - 1  
+    print('O fatorial é {}.'.format(fat))
+
+fatorial(valor)
+
+
+
